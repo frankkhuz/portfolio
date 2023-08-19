@@ -12,6 +12,7 @@ nav{
     min-height: 70px;
     padding: 0 10px;
     align-items: center;
+    border: 1px solid black;
 }
 .navMenu{
     display: flex;
@@ -20,6 +21,8 @@ nav{
     gap: 40px;
     font-size: 10px;
     transition: 0.7s ease;
+    /* border: 1px solid black; */
+
 
 }
 nav .navMenu li a {
@@ -31,7 +34,7 @@ nav .navMenu li a {
 }
 
 .navMenu :hover{
-    background: orangered; 
+    color: black; 
 }
 .hamburger{
     display: none;
@@ -63,11 +66,19 @@ nav .navMenu li a {
         position: fixed;
         left: -100%;
         top: 70px;
-        gap: 0;
+        gap: 12px;
         flex-direction: column;
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        height: 5rem;
+        background-color: black;
+        color: white;
+        
+    }
+    
+    .navMenu :hover{
+        color: white;
     }
     .navMenu.active{
         left: 0;
